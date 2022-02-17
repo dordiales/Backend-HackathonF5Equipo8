@@ -1,14 +1,12 @@
 import sqlite3
-from domain.example import ContactRepository
+from domain.example import ExampleRepository
 from src.webserver import create_app
-from src.domain.info import InfoRepository
 
 
 database_path = "data/database.db"
 
 repositories = {
-    "info": InfoRepository(database_path),
-    "contacts": ContactRepository(database_path),
+    "examples": ExampleRepository(database_path),
 }
 
 app = create_app(repositories)
