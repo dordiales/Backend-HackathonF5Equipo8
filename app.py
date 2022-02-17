@@ -1,5 +1,5 @@
 import sqlite3
-from domain.example import ExampleRepository
+from src.domain.example import ExampleRepository
 from src.webserver import create_app
 
 
