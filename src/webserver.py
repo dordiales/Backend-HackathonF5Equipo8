@@ -13,4 +13,9 @@ def create_app(repositories):
         all_examples = repositories["examples"].get_all()
         return object_to_json(all_examples)
 
+    @app.route("/api/experiences", methods=["GET"])
+    def get_all_experiences():
+        all_experiences = repositories["experiences"].get_all()
+        return object_to_json(all_experiences)
+
     return app
