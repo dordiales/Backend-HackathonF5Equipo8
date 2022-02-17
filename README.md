@@ -15,3 +15,19 @@
 3. Ejecutar la aplicación
 
    `python app.py`
+   
+4. Es necesaria la extensión SQlite Viewer para trabajar sobre la DB.
+
+### Stack
+
+React, Python, Bootstrap
+
+#### Equipo de desarrollo
+
+Biplop Dey
+Cristian Leon 
+David Ordiales
+Juan David Quimbayo Núñez
+Marisa Posada
+Santiago Gustavo López Bernal 
+Sara González
