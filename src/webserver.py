@@ -8,10 +8,9 @@ def create_app(repositories):
     app = Flask(__name__)
     CORS(app)
 
-    @app.route("/api/examples", methods=["GET"])
-    def get_all_examples():
-        all_examples = repositories["examples"].get_all()
-        return object_to_json(all_examples)
+    @app.route("/", methods=["GET"])
+    def wellcome():
+        return "<h1>Local Experience API</h1>\n<h3>Bienvenido, por favor lea el README.md antes de utilizar esta api</h3>"
 
     @app.route("/api/experiences", methods=["GET"])
     def get_all_experiences():

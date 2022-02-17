@@ -4,7 +4,7 @@ from src.webserver import create_app
 from src.domain.guide import Guide, GuideRepository
 
 
-def test_api_should_return_existing_examples():
+def test_api_should_return_existing_guides():
 
     guide_repository = GuideRepository(temp_file())
     app = create_app(repositories={"guides": guide_repository})
